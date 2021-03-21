@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Organiza Mi Día!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a id="link_index" class="nav-link" aria-current="page" href="/">Mis Tareas</a>
+              </li>
+              <li class="nav-item">
+                  <a id="link_insert_task" class="nav-link" href="/insert_task">Ingresar una Tarea</a>
+              </li>
+              <li class="nav-item">
+                  <a id="link_modify_my_tasks" class="nav-link" href="/modify_my_tasks">Gestionar Mis Tareas</a>
+              </li>
+          </ul>
+          <form class="d-flex">
+              <div class="nav-username">{{ getUsername() }}</div>
+          </form>
+      </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer class="footer py-5">
+  <div class="container">
+      <div class="row footer_inner">
+          <div class="col-lg-8 col-sm-6">
+              <aside class="f_widget ab_widget"><br>
+                  <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> | Todos los derechos reservados.</p>
+                  <p>App desarrollada por Joaquín Parrilla. Sitio alojado con <a href="https://www.pythonanywhere.com/">Pythonanywhere</a><br>Contactame a mi <a href="mailto:joaquin.p.olivera@gmail.com">correo</a>, las recomendaciónes son más que bienvenidas!</p>
+                  <br>
+              </aside>
+          </div>
+      </div>
+  </div>
+</footer>
