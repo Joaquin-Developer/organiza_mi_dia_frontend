@@ -7,6 +7,8 @@ import { InsertTasksComponent } from './insert-tasks/insert-tasks.component';
 import { UpdateTasksComponent } from './update-tasks/update-tasks.component';
 import { ShowMyTasksComponent } from './show-my-tasks/show-my-tasks.component';
 
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { ShowMyTasksComponent } from './show-my-tasks/show-my-tasks.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
